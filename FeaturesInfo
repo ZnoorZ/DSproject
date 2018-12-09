@@ -1,1 +1,6 @@
+Accelerometers measure the rate of change of velocity so are sensitive to slowing up or slowing down motions.
+
+Most accelerometers are sensitive to both static and dynamic forces. Static sensitivity is used in tilt sensing applications to measure orientation relative to the earth’s gravity. Dynamic measurements are useful in determining transitions in motion.
+
+Features:
 The entropy is a measure that can reveal how much dynamical nature and the information the signal contains.
