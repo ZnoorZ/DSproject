@@ -1,0 +1,47 @@
+Purpose : To recognize human activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+Methodology : Analyze Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+Data Set Characteristics:Multivariate, Time-Series
+ 
+Associated Tasks:Classification
+
+Dataset Info: 
+* The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+* Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
+* Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+* The experiments have been video-recorded to label the data manually.
+* Video link: https://www.youtube.com/watch?v=XOEN9W05_4A
+ 
+Pre-processing of Signals:
+* The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). 
+* The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity.
+* The Butterworth filter is a type of signal processing filter designed to have a frequency response as flat as possible in the passband. It is also referred to as a maximally flat magnitude filter.
+* The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used.
+
+Attribute Info:
+For each record in the dataset it is provided: 
+-  Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+-  Triaxial Angular velocity from the gyroscope. 
+
+A 561-feature vector with time and frequency domain variables. 
+
+10299 instances
+-  Its activity label. 
+-  An identifier of the subject who carried out the experiment.
+
+What we did?
+* We read research papers on this (Human Activity Recognition) dataset.
+* We performed Exploratory Data Analysis.
+* We did Feature Exploration
+* We applied different classifiers for recognizing the human activities to choose the best classifier for this task.
+
+Classification Algorithms used:
+* MC-SVM
+* Decision Tree
+* Random Forest
+
+Accuracy Results:
+SVM: 81.26%  
+Decision Tree: 83.30% 
+Random Forest: 92.26%
